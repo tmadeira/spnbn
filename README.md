@@ -1,0 +1,1 @@
+A simple implementation of the algorithm of [Zhao et al. (2015)](http://jmlr.org/proceedings/papers/v37/zhaoc15.pdf) to convert Sum-Product Networks into Bayesian Networks with Algebraic Decision Diagrams.
