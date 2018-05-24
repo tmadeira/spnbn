@@ -1,3 +1,4 @@
+// Package zhao implements Zhao et al. (2015) algorithm to convert SPNs into BNs with ADDs.
 package zhao
 
 import (

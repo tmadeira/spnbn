@@ -1,3 +1,4 @@
+// Package spn implements normal Sum-Product Networks.
 package spn
 
 type NodeType int

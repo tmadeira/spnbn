@@ -1,3 +1,4 @@
+// Package bn implements Bayesian Networks with CPDs represented by algebraic decision diagrams.
 package bn
 
 import (

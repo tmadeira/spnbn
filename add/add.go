@@ -1,3 +1,4 @@
+// Package add implements extended Algebraic Decision Diagrams.
 package add
 
 import (
