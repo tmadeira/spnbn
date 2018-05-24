@@ -8,34 +8,6 @@ import (
 	"github.com/tmadeira/spnbn/zhao"
 )
 
-func makeSPN(x1, x2 int) spn.Node {
-	S := spn.NewSumNode()
-
-	a := spn.NewProductNode()
-	b := spn.NewProductNode()
-	c := spn.NewProductNode()
-
-	d := spn.NewTerminalNode(x1, 0.6)
-	e := spn.NewTerminalNode(x1, 0.9)
-	f := spn.NewTerminalNode(x2, 0.3)
-	g := spn.NewTerminalNode(x2, 0.2)
-
-	a.AddChild(d)
-	a.AddChild(f)
-
-	b.AddChild(d)
-	b.AddChild(g)
-
-	c.AddChild(e)
-	c.AddChild(g)
-
-	S.AddChild(a, 20.0/35.0)
-	S.AddChild(b, 6.0/35.0)
-	S.AddChild(c, 9.0/35.0)
-
-	return S
-}
-
 func recPrint(u add.Node, level int) {
 	for i := 0; i < level; i++ {
 		fmt.Printf("  ")
@@ -47,9 +19,27 @@ func recPrint(u add.Node, level int) {
 	}
 }
 
+func makeSPN(x1, x2 int) spn.Node {
+	S := spn.NewSumNode()
+	a, b, c := spn.NewProductNode(), spn.NewProductNode(), spn.NewProductNode()
+	d, e := spn.NewTerminalNode(x1, 0.6), spn.TerminalNode(x1, 0.9)
+	f, g := spn.NewTerminalNode(x2, 0.3), spn.NewTerminalNode(x2, 0.2)
+
+	a.AddChild(d)
+	a.AddChild(f)
+	b.AddChild(d)
+	b.AddChild(g)
+	c.AddChild(e)
+	c.AddChild(g)
+	S.AddChild(a, 20.0/35.0)
+	S.AddChild(b, 6.0/35.0)
+	S.AddChild(c, 9.0/35.0)
+
+	return S
+}
+
 func main() {
 	S := makeSPN(1, 2)
-
 	B := zhao.BuildBN(S)
 
 	fmt.Printf("Hidden variables = %d\n", len(B.Hid))
