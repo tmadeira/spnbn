@@ -1,0 +1,102 @@
+\documentclass[a4paper,oneside,11pt]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil,english]{babel}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{listings}
+\usepackage{listings-golang}
+\usepackage{color}
+%\usepackage{dingbat}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+
+\lstset{
+  basicstyle=\footnotesize\ttfamily,
+  breaklines=true,
+  frame=L,
+  language=Golang,
+  numbers=left,
+  tabsize=2
+}
+
+\newtheoremstyle{definition}
+{\topsep}{\topsep}
+{}{}
+{\bfseries}{}
+{ }
+{\thmname{#1}~\thmnumber{#2}\thmnote{ (#3)}.}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definição}
+\newtheorem{proposition}{Proposição}
+
+\newtheoremstyle{algorithm}
+{\topsep}{\topsep}
+{}{}
+{\scshape}{}
+{ }
+{\thmnote{#3}\\}
+
+\theoremstyle{algorithm}
+\newtheorem{algorithm}{Algoritmo}
+
+\newtheoremstyle{step}
+{\topsep}{\topsep}
+{}{}
+{\itshape}{}
+{1em}
+{\thmname{#1}~\thmnumber{#2}.}
+
+\theoremstyle{step}
+\newtheorem{step}{Passo}
+
+\usetikzlibrary{positioning,shapes,arrows}
+
+\frenchspacing
+\linespread{1.5}
+
+\title{Redes soma-produto e sua relação com redes bayesianas}
+\author{Tiago Madeira}
+\date{Maio de 2018}
+
+\begin{document}
+\selectlanguage{brazil}
+
+\frontmatter
+
+  \thispagestyle{empty}
+  \input{capa}
+  \cleardoublepage\thispagestyle{empty}
+
+  \pagenumbering{roman}
+  \input{resumo}
+
+  \selectlanguage{english}
+  \input{abstract}
+  \selectlanguage{brazil}
+
+  \tableofcontents
+  \cleardoublepage
+
+\mainmatter
+
+  \input{introducao}
+  \cleardoublepage
+
+  \input{fundamentos}
+  \cleardoublepage
+
+  \input{desenvolvimento}
+  \cleardoublepage
+
+  \input{conclusao}
+  \cleardoublepage
+
+\backmatter
+
+  \bibliographystyle{plain}
+  \bibliography{referencias}
+
+\end{document}

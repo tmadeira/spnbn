@@ -1,0 +1,13 @@
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Fundamentos}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Redes bayesianas}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Redes soma-produto}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Diagramas de decis\343o alg\351brica}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{De redes soma-produto para redes bayesianas}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Algoritmo de Zhao et al.}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection.3.1.1}{Constru\347\343o da estrutura}{section.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.1.2}{Distribui\347\365es de probabilidade condicional}{section.3.1}% 9
+\BOOKMARK [1][-]{section.3.2}{Implementa\347\343o}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{Exemplos}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.4}{Conclus\365es}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Considera\347\365es finais}{}% 13

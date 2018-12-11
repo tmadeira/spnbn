@@ -1,0 +1,16 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+Redes soma-produto \cite{Poon2012} (\emph{SPN}, do inglês \emph{Sum-Product Network}) são modelos profundos tratáveis para inferência probabilística. Embora uma rede soma-produto possa ser vista como uma rede neural com funções de ativação logarítmicas e exponenciais \cite{Hsu2017}, ela é mais flexível por permitir aprendizagem não supervisionada e inferência de probabilidades condicionais no lugar de uma função fixa como saída. Por outro lado, diferente de modelos probabilísticos baseados em grafos como redes bayesianas e redes de Markov \cite{Koller2009}, as redes soma-produto são robustas e permitem inferência exata em tempo linear no tamanho da rede.
+
+Desde que foram propostas, em 2011, as redes soma-produto têm apresentado resultados muito bons para diversas aplicações, como modelagem de linguagem \cite{Cheng2014}, modelagem de sinais de fala \cite{Peharz2014}, reconhecimento de atividade \cite{Amer2016}, classificação e reconstrução de imagens \cite{Poon2012}, entre outras. Além disso, se mostrou que elas podem aprender de forma \emph{online} \cite{Lee2013} e distribuída \cite{Rashwan2016}, características que demonstram escalabilidade e utilidade em situações com grande volume de dados.
+
+\vspace{1em}
+
+Em 2015, um artigo de Zhao \emph{et al.} \cite{Zhao2015} apresentou uma conexão teórica entre redes soma-produto e redes bayesianas (\emph{BN}, do inglês \emph{Bayesian Networks}), junto com algoritmo linear para realizar a conversão de um modelo para o outro. O que essa conexão pode nos dizer sobre o conhecimento probabilístico e as relações de dependência codificadas nas redes soma-produto?
+
+Isso nos levou a estudar redes soma-produto e sua relação com redes bayesianas, assim como implementar o algoritmo de Zhao \emph{et al.} \cite{Zhao2015} para construir uma rede bayesiana a partir de uma rede soma-produto. O segundo foi motivado também por não termos encontrado tal implementação disponível na Internet durante o desenvolvimento deste trabalho.
+
+\vspace{1em}
+
+Assim como pode-se situar as redes soma-produto na interseção entre modelos de aproximação de função como redes neurais profundas e modelos probabilísticos baseados em grafos, este trabalho --- essencialmente teórico --- pode ser situado na interseção entre Ciência da Computação e a disciplina de \emph{Técnicas de Raciocínio Probabilístico em Inteligência Artificial}. Ele parte da tentativa de compreender o raciocínio probabilístico codificado num modelo profundo usado em aprendizagem de máquina.
